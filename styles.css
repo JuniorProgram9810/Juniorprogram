@@ -1,0 +1,365 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #fc1919;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+}
+
+header .logo img {
+    height: 90px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+header .menu-icon {
+    display: none;
+    font-size: 30px;
+    color: white;
+}
+
+/* Banner */
+.banner {
+    background: url('banner.jpg') no-repeat center center/cover;
+    text-align: center;
+    color: rgb(206, 31, 31);
+    padding: 0px 0px;
+    margin: 5px; 
+    font-size: x-large;
+}
+
+.banner h1 {
+    font-size: 2.5rem;
+}
+
+/* Content */
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+main section.article {
+    width: 70%;
+}
+
+main section.article h2 {
+    font-size: 2rem;
+}
+
+main aside {
+    width: 25%;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #0c0101;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+footer .social a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer .social a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    header nav ul {
+        display: none;
+    }
+
+    header .menu-icon {
+        display: block;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    main section.article,
+    main aside {
+        width: 100%;
+    }
+}
+/* Barra de búsqueda */
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-left: auto;
+}
+
+/* Contenedor de productos en formato grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.producto-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.producto-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #130202;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Asegurarse de que el main ocupe el espacio restante */
+main {
+    flex: 1; /* Hace que el main ocupe el espacio disponible */
+}
+
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+header {
+    background-color: #b80d0d;
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-bar {
+    display: flex;
+}
+
+.search-bar input {
+    padding: 5px;
+    margin-right: 5px;
+}
+
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #f0f0f0;
+    text-align: center;
+    padding: 15px;
+}
+/* Contenedor de productos en formato grid */
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Tamaño mínimo de cada tarjeta */
+    gap: 20px;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+/* Estilos de cada tarjeta de producto */
+.producto-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(78, 31, 31, 0.1);
+    height: 350px; /* Altura fija para un tamaño uniforme */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Imagen del producto */
+.producto-item img {
+    max-width: 100%;
+    height: 150px; /* Altura fija para la imagen */
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/* Título y descripción del producto */
+.producto-item h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.producto-item p {
+    color: #555;
+    margin: 5px 0;
+}
+
+/* Precio del producto */
+.producto-item span {
+    font-weight: bold;
+    color: #e63946;
+    margin-top: 5px;
+}
+.auth-button {
+    background-color: #0a1016;
+    color: white;
+    padding:  10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+.auth-button:hover {
+    background-color: #051527;
+}
+
+/* Estilo del contenedor del buscador */
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+/* Estilo del campo de entrada de búsqueda */
+#searchInput {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #0e0101;
+    border-radius: 5px 0 0 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+#searchInput:focus {
+    border-color: #031120;
+}
+
+/* Estilo del botón de búsqueda */
+.search-bar button {
+    background-color: #040e18;
+    color: rgb(255, 230, 4);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar button:hover {
+    background-color: #0b131b;
+}
+.oculto {
+    display: none;
+}
+.visible {
+    display: block;
+}
+/* Estilo para Admin */
+.admin-style {
+    background-color: #282c34;
+    color: white;
+}
+
+/* Estilo para Cliente */
+.user-style {
+    background-color: #f9f9f9;
+    color: black;
+}
+/* Ocultar y mostrar contenido dinámicamente */
+.oculto {
+    display: none;
+}
+.visible {
+    display: block;
+}
+
+/* Formularios de recuperación */
+#recoverForm,
+#resetPasswordForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#recoverForm input,
+#resetPasswordForm input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#recoverForm button,
+#resetPasswordForm button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #b80d0d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#recoverForm button:hover,
+#resetPasswordForm button:hover {
+    background-color: #8a0707;
+}

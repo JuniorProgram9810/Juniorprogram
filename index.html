@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototipo Web con Productos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div class="logo">
+            <img src="/imagenes/sport-motorcycle-logo-free-vector.jpg" alt="Logo del sitio">
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Buscar productos...">
+            <button onclick="buscarProducto()">Buscar</button>
+        </div>
+    </header>
+
+    <section id="adminContent" class="oculto">
+        <h2>Panel de Administración</h2>
+        <p>Acceso exclusivo para administradores.</p>
+    </section>
+    <section id="userContent" class="oculto">
+        <h2>Contenido de Cliente</h2>
+        <p>Bienvenido al área de clientes.</p>
+    </section>
+
+    <section id="recoverAccount" class="oculto">
+        <h2>Recuperar Cuenta</h2>
+        <form id="recoverForm">
+            <label for="username">Usuario o Correo:</label>
+            <input type="text" id="username" placeholder="Ingrese su usuario o correo" required>
+            <button type="submit">Recuperar</button>
+        </form>
+        <form id="resetPasswordForm" class="oculto">
+            <label for="newPassword">Nueva Contraseña:</label>
+            <input type="password" id="newPassword" placeholder="Ingrese su nueva contraseña" required>
+            <button type="submit">Actualizar Contraseña</button>
+        </form>
+    </section>
+    
+
+    <!-- Cuerpo principal -->
+    <main>
+        <section class="productos-grid" id="productosContainer">
+            <!-- Ejemplos de productos -->
+            <div class="producto-item">
+                <img src="/imagenes/descarga.jpeg" alt="Producto 1">
+                <h3>MOTOCICLETA ITALIKA 150</h3>
+                <p>Moto para trabajo</p>
+                <span>Precio: $18000</span>
+            </div>
+            <div class="producto-item">
+                <img src="/imagenes/5009406575.avif" alt="Producto 2">
+                <h3>MOTOCICLETA SEMIDEPORTIVA 250S</h3>
+                <p>MOTO CASUAL</p>
+                <span>Precio: $24000</span>
+            </div>
+            <!-- Agrega más productos aquí -->
+        </section>
+        <section class="productos-grid" id="productosContainer">
+            <!-- Ejemplos de productos -->
+            <div class="producto-item">
+                <img src="/imagenes/descarga (1).jpeg" alt="Producto 1">
+                <h3>MOTOCICLETA DEPORTIVA 300S</h3>
+                <p>DEPORTIVA</p>
+                <span>Precio: $40000</span>
+            </div>
+            <div class="producto-item">
+                <img src="/imagenes/descarga (2).jpeg" alt="Producto 2">
+                <h3>MOTOCICLETA DEPORTIVA</h3>
+                <p>HONDA 250S </p>
+                <span>Precio: $34000</span>
+            </div>
+            <!-- Agrega más productos aquí -->
+        </section>
+        <section class="productos-grid" id="productosContainer">
+            <!-- Ejemplos de productos -->
+            <div class="producto-item">
+                <img src="/imagenes/descarga (3).jpeg" alt="Producto 1">
+                <h3>MOTO DEPORTIVA</h3>
+                <p>YAMAHA SPORT 300S</p>
+                <span>Precio: $45000</span>
+            </div>
+            <div class="producto-item">
+                <img src="/imagenes/descarga (4).jpeg" alt="Producto 2">
+                <h3>MOTO DEPORTIVA</h3>
+                <p>PULSAR 600S SPORT </p>
+                <span>Precio: $150000</span>
+            </div>
+            <!-- Agrega más productos aquí -->
+        </section>
+        <section class="productos-grid" id="productosContainer">
+            <!-- Ejemplos de productos -->
+            <div class="producto-item">
+                <img src="/imagenes/descarga (5).jpeg" alt="Producto 1">
+                <h3>MOTOCICLETA PARA TRABAJO</h3>
+                <p>HONDA 200</p>
+                <span>Precio: $29000</span>
+            </div>
+            <div class="producto-item">
+                <img src="/imagenes/gsx-r1000r.png" alt="Producto 2">
+                <h3>MOTO DEPORTIVA</h3>
+                <p>Pulsar 1200 s</p>
+                <span>Precio: $200000</span>
+            </div>
+            <!-- Agrega más productos aquí -->
+        </section>
+        <section class="productos-grid" id="productosContainer">
+            <!-- Ejemplos de productos -->
+            <div class="producto-item">
+                <img src="/imagenes/images (1).jpeg" alt="Producto 1">
+                <h3>MOTO DEPORTIVA</h3>
+                <p>HONDA 1200S</p>
+                <span>Precio: $300000</span>
+            </div>
+            <div class="producto-item">
+                <img src="/imagenes/images.jpeg" alt="Producto 2">
+                <h3>MOTOCICLETA DEPORTIVA</h3>
+                <p>SUSUKI 1200S</p>
+                <span>Precio: $350000</span>
+            </div>
+            <!-- Agrega más productos aquí -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 - Todos los derechos reservados.</p>
+        <div class="social">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
